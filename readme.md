@@ -2,6 +2,16 @@
 
 Docker container to install and run [PHP-FPM](https://php-fpm.org/).
 
+## Supported branches 
+
+- 7.3.9 [Dockerfile](https://github.com/fifths/php-fpm/blob/master/7.3.9/Dockerfile)
+
+## Getting image
+
+```sh
+docker pull fifths/php-fpm
+```
+
 ### [PHP Modules]
 - apcu
 - bcmath
