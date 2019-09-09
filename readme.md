@@ -12,6 +12,54 @@ Docker container to install and run [PHP-FPM](https://php-fpm.org/).
 docker pull fifths/php-fpm
 ```
 
+## Running your PHP script
+
+```sh
+sudo docker container run --rm -v $(pwd):/var/www/html fifths/php-fpm php index.php
+```
+
+## Running as server
+
+```sh
+sudo docker container run --rm --name php-fpm -v $(pwd):/var/www/html -p 8080:8080 fifths/php-fpm php -S="0.0.0.0:8080" -t="/var/www/html"
+```
+
+## using  [Docker Compose](https://docs.docker.com/compose/)
+
+```sh
+version: '3'
+services:
+  php-fpm:
+    container_name: php-fpm
+    image: fifths/php-fpm
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/var/www/html
+    command: php -S="0.0.0.0:8080" -t="/var/www/html"
+```
+
+```sh
+version: '3'
+services:
+    php-fpm:
+        image: fifths/php-fpm
+        ports:
+            - "9000:9000"
+        restart: always
+        volumes:
+            - "./:/var/www/html:rw"
+        command:
+            - /bin/bash
+            - -c
+            - |
+                cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
+                php-fpm
+        environment:
+            TZ: "Asia/Shanghai"
+```
+
+
 ### [PHP Modules]
 - apcu
 - bcmath
