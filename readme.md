@@ -53,7 +53,7 @@ services:
         volumes:
             - "./:/var/www/html:rw"
         command:
-            - /bin/bash
+            - /bin/sh
             - -c
             - |
                 cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
