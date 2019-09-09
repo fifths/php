@@ -3,6 +3,7 @@
 Docker container to install and run [PHP-FPM](https://www.php.net/).
 
 [![Build Status](https://travis-ci.org/fifths/php-fpm.svg?branch=master)](https://travis-ci.org/fifths/php-fpm)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/fifths/php-fpm)
 
 ## Supported branches 
 
