@@ -83,6 +83,7 @@ services:
 - iconv
 - imagick
 - imap
+- inotify
 - intl
 - json
 - ldap
@@ -93,6 +94,7 @@ services:
 - mysqli
 - mysqlnd
 - openssl
+- pcntl
 - pcre
 - PDO
 - pdo_mysql
