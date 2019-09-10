@@ -69,6 +69,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && yes '' | pecl install redis && docker-php-ext-enable redis \
     && yes '' | pecl install imagick && docker-php-ext-enable imagick \
     && yes '' | pecl install apcu && docker-php-ext-enable apcu \
+    && pecl install swoole && docker-php-ext-enable swoole \
     && docker-php-source delete \
     && apk \
     del build-deps \

@@ -112,6 +112,7 @@ services:
 - SPL
 - sqlite3
 - standard
+- swoole
 - tokenizer
 - xdebug
 - xml
