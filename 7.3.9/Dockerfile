@@ -44,6 +44,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && docker-php-ext-configure intl \
     && docker-php-ext-configure ldap --with-libdir=lib/ \
     && docker-php-ext-install -j$(nproc) \
+        pcntl \
         ldap \
         zip \
         gd \
