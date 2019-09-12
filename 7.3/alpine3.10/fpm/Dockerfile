@@ -27,7 +27,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
         libmemcached-dev \
         openldap-dev \
     && apk add --no-cache \
-        freetype libjpeg-turbo libpng \
+        tzdata freetype libjpeg-turbo libpng \
         imagemagick \
         libmemcached \
         libpq \
