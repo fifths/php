@@ -2,17 +2,17 @@
 
 Docker container to install and run [PHP-FPM](https://www.php.net/).
 
-[![Build Status](https://travis-ci.org/fifths/php-fpm.svg?branch=master)](https://travis-ci.org/fifths/php-fpm)
-[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/fifths/php-fpm)
+[![Build Status](https://travis-ci.org/fifths/php.svg?branch=master)](https://travis-ci.org/fifths/php)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/fifths/php)
 
 ## Supported branches 
 
-- 7.3.9 [Dockerfile](https://github.com/fifths/php-fpm/blob/master/7.3.9/Dockerfile)
+- 7.3 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/alpine3.10/cli/Dockerfile)
 
 ## Getting image
 
 ```sh
-docker pull fifths/php-fpm
+docker pull fifths/php:7.3.9-fpm
 ```
 
 ## Running your PHP script
