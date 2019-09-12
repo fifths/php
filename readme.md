@@ -7,24 +7,24 @@ Docker container to install and run [PHP-FPM](https://www.php.net/).
 
 ## Supported branches 
 
-- 7.3 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/alpine3.10/cli/Dockerfile)
+- 7.3 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/alpine3.10/fpm/Dockerfile)
 
 ## Getting image
 
 ```sh
-docker pull fifths/php:7.3.9-fpm
+docker pull fifths/php
 ```
 
 ## Running your PHP script
 
 ```sh
-sudo docker container run --rm -v $(pwd):/var/www/html fifths/php-fpm php index.php
+sudo docker container run --rm -v $(pwd):/var/www/html fifths/php php index.php
 ```
 
 ## Running as server
 
 ```sh
-sudo docker container run --rm --name php-fpm -v $(pwd):/var/www/html -p 8080:8080 fifths/php-fpm php -S="0.0.0.0:8080" -t="/var/www/html"
+sudo docker container run --rm --name php-fpm -v $(pwd):/var/www/html -p 8080:8080 fifths/php php -S="0.0.0.0:8080" -t="/var/www/html"
 ```
 
 ## using  [Docker Compose](https://docs.docker.com/compose/)
@@ -34,7 +34,7 @@ version: '3'
 services:
   php-fpm:
     container_name: php-fpm
-    image: fifths/php-fpm
+    image: fifths/php
     ports:
       - 8080:8080
     volumes:
@@ -46,7 +46,7 @@ services:
 version: '3'
 services:
     php-fpm:
-        image: fifths/php-fpm
+        image: fifths/php:7.3.9-fpm
         ports:
             - "9000:9000"
         restart: always
