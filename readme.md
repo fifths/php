@@ -7,7 +7,8 @@ Docker container to install and run [PHP-FPM](https://www.php.net/).
 
 ## Supported branches 
 
-- 7.3 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/alpine3.10/fpm/Dockerfile)
+- 7.3.9 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/7.3.9/alpine3.10/fpm/Dockerfile)
+- 7.3.10 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/7.3.10/alpine3.10/fpm/Dockerfile)
 
 ## Getting image
 
