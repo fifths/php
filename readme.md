@@ -6,8 +6,9 @@ Docker container to install and run [PHP-FPM](https://www.php.net/).
 [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/fifths/php)
 
 ## Supported branches 
-
-- 7.3.9 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/7.3.9/alpine3.10/fpm/Dockerfile)
+- 7.1.32
+- 7.2.23
+- 7.3.9 
 - 7.3.10 [Dockerfile](https://github.com/fifths/php/blob/master/7.3/7.3.10/alpine3.10/fpm/Dockerfile)
 
 ## Getting image

@@ -1,6 +1,14 @@
 sudo: required
 services: docker
 script:
+  - docker build -t fifths/php:7.0.13-fpm ./7.0/7.0.13/alpine/fpm
+
+  - docker build -t fifths/php:7.1.32-fpm ./7.1/7.1.32/alpine3.10/fpm
+  - docker build -t fifths/php:7.1.32-cli ./7.1/7.1.32/alpine3.10/cli
+
+  - docker build -t fifths/php:7.2.23-fpm ./7.2/7.2.23/alpine3.10/fpm
+  - docker build -t fifths/php:7.2.23-cli ./7.2/7.2.23/alpine3.10/cli
+
   - docker build -t fifths/php:7.3.10-fpm ./7.3/7.3.10/alpine3.10/fpm
   - docker build -t fifths/php:7.3.10-cli ./7.3/7.3.10/alpine3.10/cli
 after_script:
