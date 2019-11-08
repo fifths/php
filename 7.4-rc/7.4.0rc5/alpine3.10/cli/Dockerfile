@@ -60,6 +60,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
         soap \
         sockets \
         xmlrpc \
+    && pecl install xdebug && docker-php-ext-enable xdebug \
     && yes '' | pecl install memcached && docker-php-ext-enable memcached \
     && pecl install mongodb && docker-php-ext-enable mongodb \
     && yes '' | pecl install redis && docker-php-ext-enable redis \
