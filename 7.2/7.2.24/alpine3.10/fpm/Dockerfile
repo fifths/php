@@ -1,4 +1,4 @@
-FROM php:7.2.24-cli-alpine3.10
+FROM php:7.2.24-fpm-alpine3.10
 
 LABEL maintainer="Fifths <ligangmingx@gmail.com>"
 
