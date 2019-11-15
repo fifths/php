@@ -1,4 +1,4 @@
-FROM php:7.4.0RC5-cli-alpine3.10
+FROM php:7.4.0RC6-fpm-alpine3.10
 
 LABEL maintainer="Fifths <ligangmingx@gmail.com>"
 
@@ -73,3 +73,4 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     del build-deps \
     && rm -rf /var/cache/apk/* /var/lib/apk/* /etc/apk/cache/* \
     && rm -rf /tmp/* /var/tmp/*
+

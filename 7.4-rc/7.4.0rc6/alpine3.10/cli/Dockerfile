@@ -1,4 +1,4 @@
-FROM php:7.4.0RC5-cli-alpine3.10
+FROM php:7.4.0RC6-cli-alpine3.10
 
 LABEL maintainer="Fifths <ligangmingx@gmail.com>"
 
