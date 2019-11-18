@@ -26,6 +26,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
         imagemagick-dev \
         libmemcached-dev \
         openldap-dev \
+        gmp-dev \
     && apk add --no-cache \
         tzdata freetype libjpeg-turbo libpng \
         imagemagick \
@@ -64,6 +65,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
         sockets \
         xmlrpc \
         xsl \
+        gmp \
     && pecl install xdebug && docker-php-ext-enable xdebug \
     && yes '' | pecl install memcached && docker-php-ext-enable memcached \
     && pecl install mongodb && docker-php-ext-enable mongodb \
